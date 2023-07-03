@@ -1,0 +1,23 @@
+#confirmation {
+    padding: 20px;
+}
+
+#confirmation h2 {
+    text-align: center;
+}
+
+#confirmation p {
+    font-size: 20px;
+    text-align: center;
+}
+
+div.youtube-video {
+    height: 506.25px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+div.youtube-video iframe {
+    height: 100%;
+    width: 100%;
+}
