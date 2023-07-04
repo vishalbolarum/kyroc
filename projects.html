@@ -10,10 +10,12 @@
     <meta name="author" content="Vishal Bolarum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./projects.css">
     <link rel="icon" href="./favicon.png">
 </head>
 
 <body>
+
     <nav>
         <a href='index.html' class="logo">Kyroc</a>
         <div class="nav-links">
@@ -23,15 +25,20 @@
         </div>
         <img class='menu' src="./resources/menu.png"/>
     </nav>
+
     <main>
         <h2>Projects</h2>
-        <p>Webpage under development.</p>
-        <div>
-            <div>
-
+        <p>More to be added!</p>
+        <div class="projects">
+            <div class="project">
+                <div class="image">
+                    <img src="./resources/gopanoptic.png"/>
+                </div>
+                <a href="https://gopanoptic.com" target="_blank">gopanoptic.com</a>
             </div>
         </div>
     </main>
+
     <footer>
         <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span id="year"></span></div>
         <a href="terms.html">Terms of service</a>
@@ -40,6 +47,7 @@
             document.getElementById('year').innerHTML = new Date().getFullYear()
         </script>
     </footer>
+
 </body>
 
 </html>
