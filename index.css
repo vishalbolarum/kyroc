@@ -14,7 +14,7 @@ main, section {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: normal;
     margin: 10px 0;
 }
@@ -101,10 +101,15 @@ a.logo {
     font-size: 20px;
 }
 
-.menu {
+img#menu {
     filter: invert(100%);
-    display: none;
     height: 25px;
+}
+
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -112,9 +117,33 @@ a.logo {
         display: none;
     }
 
-    .menu {
+    #menu {
         display: block;
     }
+}
+
+#sidebar-menu {
+    background-color: black;
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+#sidebar-menu img {
+    filter: invert(100%);
+    float: right;
+    display: block;
+    height: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+#sidebar-menu > a {
+    display: block;
+    margin: 2rem 0;
+    text-align: right;
 }
 
 /* [END] Navigation Bar */

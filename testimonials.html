@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Software Development & AI Implementation | Kyroc</title>
-        <meta charset="UTF-8">
-        <meta name="description"
-            content="We're a British engineering team that develops software & implements artificial intelligence for a wide variety of companies.">
-        <meta name="keywords" content="software development, ai development">
-        <meta name="author" content="Vishal Bolarum">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="./testimonials.css">
-        <link rel="icon" href="./favicon.png">
-    </head>
-    <body>
-        <nav>
-            <a href='index.html' class="logo">Kyroc</a>
-            <div class="nav-links">
-                <a href="testimonials.html" target="_blank">Testimonials</a>
-                <a href="projects.html" target="_blank">Projects</a>
-                <a href="call.html" target="_blank">Book a call</a>
+
+<head>
+    <title>Software Development & AI Implementation | Kyroc</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="We're a British engineering team that develops software & implements artificial intelligence for a wide variety of companies.">
+    <meta name="keywords" content="software development, ai development">
+    <meta name="author" content="Vishal Bolarum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./testimonials.css">
+    <link rel="icon" href="./favicon.png">
+</head>
+
+<body>
+    <nav>
+        <a href='index.html' class="logo">Kyroc</a>
+        <div class="nav-links">
+            <a href="testimonials.html">Testimonials</a>
+            <a href="projects.html">Projects</a>
+            <a href="call.html">Book a call</a>
+        </div>
+        <img id='menu' src="./resources/menu.png" />
+        <div id="sidebar-menu">
+            <img id='close' src="./resources/close.png" />
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
+        </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "block";
+            })
+            document.getElementById('close').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "none";
+            })
+        </script>
+    </nav>
+    <section>
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <div>
+                <video controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1MCaY7mMHGoIdaxFbgvEVIteTfZqNAppf" />
+                </video>
+                <div class="client">Hassan Hamid</div>
+                <a class="website" href="https://gopanoptic.com" target="_blank">gopanoptic.com</a>
             </div>
-            <img class='menu' src="./resources/menu.png"/>
-        </nav>
-        <section>
-            <h2>Testimonials</h2>
-            <div class="testimonials">
-                <div>
-                    <video controls>
-                        <source src="https://drive.google.com/uc?export=download&id=1MCaY7mMHGoIdaxFbgvEVIteTfZqNAppf"/>
-                    </video>
-                    <div class="client">Hassan Hamid</div>
-                    <a class="website">gopanoptic.com</a>
-                </div>
-                <div>
-                    <video controls>
-                        <source src="https://drive.google.com/uc?export=download&id=1-Ng_ZEW2xYimixHQC4kGDUXfc6AYjCWv"/>
-                    </video>
-                    <div class="client">Ryan Kemp</div>
-                    <a class="website">orcads.co.uk</a>
-                </div>
+            <div>
+                <video controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1-Ng_ZEW2xYimixHQC4kGDUXfc6AYjCWv" />
+                </video>
+                <div class="client">Ryan Kemp</div>
+                <a class="website" href="https://orcads.co.uk" target="_blank">orcads.co.uk</a>
             </div>
-        </section>
-        <footer>
-            <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span id="year"></span></div>
-            <a href="terms.html">Terms of service</a>
-            <a href="privacy.html">Privacy policy</a>
-            <script>
-                document.getElementById('year').innerHTML = new Date().getFullYear()
-            </script>
-        </footer>
-    </body>
+            <div>
+                <video controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1-6xcfzT7J-ijVcNV3mtyzpSaZfqIfrYB" />
+                </video>
+                <div class="client">Ilya Ahmad</div>
+                <a class="website" href="https://socialmovementmedia.com" target="_blank">socialmovementmedia.com</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span
+                id="year"></span></div>
+        <a href="terms.html">Terms of service</a>
+        <a href="privacy.html">Privacy policy</a>
+        <script>
+            document.getElementById('year').innerHTML = new Date().getFullYear()
+        </script>
+    </footer>
+</body>
+
 </html>

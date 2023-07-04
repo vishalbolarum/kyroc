@@ -25,7 +25,21 @@
                     <a href="projects.html">Projects</a>
                     <a href="call.html">Book a call</a>
                 </div>
-                <img class='menu' src="./resources/menu.png"/>
+                <img id='menu' src="./resources/menu.png"/>
+                <div id="sidebar-menu">
+                    <img id='close' src="./resources/close.png"/>
+                    <a href="testimonials">Testimonials</a>
+                    <a href="projects">Projects</a>
+                    <a href="call">Book a call</a>
+                </div>
+                <script>
+                    document.getElementById('menu').addEventListener('click', () => {
+                        document.getElementById('sidebar-menu').style.display = "block";
+                    })
+                    document.getElementById('close').addEventListener('click', () => {
+                        document.getElementById('sidebar-menu').style.display = "none";
+                    })
+                </script>
             </nav>
 
             <div class="hero">

@@ -13,6 +13,31 @@
 </head>
 
 <body>
+
+    <nav>
+        <a href='index.html' class="logo">Kyroc</a>
+        <div class="nav-links">
+            <a href="testimonials.html">Testimonials</a>
+            <a href="projects.html">Projects</a>
+            <a href="call.html">Book a call</a>
+        </div>
+        <img id='menu' src="./resources/menu.png"/>
+        <div id="sidebar-menu">
+            <img id='close' src="./resources/close.png"/>
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
+        </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "block";
+            })
+            document.getElementById('close').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "none";
+            })
+        </script>
+    </nav>
+    
     <section>
         <h1>Privacy policy</h1>
         <h2 class='red'>Last updated: 2nd March 2023</h2>

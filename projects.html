@@ -23,7 +23,21 @@
             <a href="projects.html">Projects</a>
             <a href="call.html">Book a call</a>
         </div>
-        <img class='menu' src="./resources/menu.png"/>
+        <img id='menu' src="./resources/menu.png" />
+        <div id="sidebar-menu">
+            <img id='close' src="./resources/close.png" />
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
+        </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "block";
+            })
+            document.getElementById('close').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "none";
+            })
+        </script>
     </nav>
 
     <main>
@@ -32,7 +46,7 @@
         <div class="projects">
             <div class="project">
                 <div class="image">
-                    <img src="./resources/gopanoptic.png"/>
+                    <img src="./resources/gopanoptic.png" />
                 </div>
                 <a href="https://gopanoptic.com" target="_blank">gopanoptic.com</a>
             </div>
@@ -40,7 +54,8 @@
     </main>
 
     <footer>
-        <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span id="year"></span></div>
+        <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span
+                id="year"></span></div>
         <a href="terms.html">Terms of service</a>
         <a href="privacy.html">Privacy policy</a>
         <script>
