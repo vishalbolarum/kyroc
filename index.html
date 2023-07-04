@@ -17,8 +17,15 @@
     <section class="first-fold">
 
         <div class="foreground">
+
             <nav>
-                <div class="logo">Kyroc</div>
+                <a href='index.html' class="logo">Kyroc</a>
+                <div class="nav-links">
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="call.html">Book a call</a>
+                </div>
+                <img class='menu' src="./resources/menu.png"/>
             </nav>
 
             <div class="hero">
@@ -38,15 +45,14 @@
 
     </section>
 
-    <section class="second-fold">
-        <h2>Projects</h2>
-        <div>
-            <p>Website is still in development.</p>
-            <div>
-                
-            </div>
-        </div>
-    </section>
+    <footer>
+        <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span id="year"></span></div>
+        <a href="terms.html">Terms of service</a>
+        <a href="privacy.html">Privacy policy</a>
+        <script>
+            document.getElementById('year').innerHTML = new Date().getFullYear()
+        </script>
+    </footer>
 </body>
 
 </html>

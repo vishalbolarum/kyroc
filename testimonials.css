@@ -1,0 +1,24 @@
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    gap: 20px;
+}
+
+.testimonials>div {
+    aspect-ratio: 16/9;
+    width: 300px;
+}
+
+.testimonials video {
+    height: 100%;
+    width: 100%;
+}
+
+.testimonials .client {
+    font-size: 25px;
+}
+
+.testimonials .website {
+    text-decoration: underline;
+}

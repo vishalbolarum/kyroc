@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-section {
+main, section {
     background-color: inherit;
     margin: 0;
     padding: 40px 7.5%;
@@ -23,6 +23,15 @@ h2 {
     font-size: 40px;
     font-weight: normal;
     margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a.button {
@@ -66,18 +75,49 @@ a.button:hover {
     width: 100%;
 }
 
+/* [START] Navigation Bar */
+
 nav {
+    align-items: center;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 75%;
-    padding: 30px 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 7.5%;
 }
 
-.logo {
-    font-size: 40px;
-    text-align: center;
+a.logo {
+    font-size: 35px;
+    display: block;
+    width: fit-content;
 }
+
+.nav-links {
+    column-gap: 20px;
+    display: flex;
+}
+
+.nav-links>a {
+    font-size: 20px;
+}
+
+.menu {
+    filter: invert(100%);
+    display: none;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+/* [END] Navigation Bar */
 
 .hero {
     align-items: center;
@@ -123,8 +163,14 @@ nav {
     }
 }
 
-/* Second Fold */
+/* Footer */
 
-.second-fold {
-    height: 1000px;
+footer {
+    align-items: center;
+    background-color: black;
+    column-gap: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    padding: 20px;
 }
