@@ -1,10 +1,12 @@
 .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px 0;
 }
 
-div.image {
+.projects div.image {
     align-items: center;
-    background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -14,6 +16,27 @@ div.image {
     width: 300px;
 }
 
-div.image img {
+.projects div.white-background {
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.projects div.wood-background {
+    background-color: #3F301D;
+    transition-duration: 0.5s;
+}
+
+.projects div.charcoal-background {
+    background-color: #232023;
+    transition-duration: 0.5s;
+}
+
+
+.projects div:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+.projects div.image img {
     width: 100%;
 }
