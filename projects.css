@@ -31,6 +31,10 @@
     transition-duration: 0.5s;
 }
 
+.projects div.blue-background {
+    background-color: #002244;
+    transition-duration: 0.5s;
+}
 
 .projects div:hover {
     background-color: transparent;
