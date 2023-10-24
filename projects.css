@@ -35,6 +35,10 @@
     background-color: #002244;
     transition-duration: 0.5s;
 }
+.projects div.cherry-blossom-pink-background {
+    background-color: #e37283;
+    transition-duration: 0.5s;
+}
 
 .projects div:hover {
     background-color: transparent;
