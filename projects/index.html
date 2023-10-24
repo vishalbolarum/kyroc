@@ -9,23 +9,23 @@
     <meta name="keywords" content="software development, ai development">
     <meta name="author" content="Vishal Bolarum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./projects.css">
-    <link rel="icon" href="./favicon.png">
+    <link rel="icon" href="../favicon.png">
 </head>
 
 <body>
 
     <nav>
-        <a href='index.html' class="logo">Kyroc</a>
+        <a href='/' class="logo">Kyroc</a>
         <div class="nav-links">
-            <a href="testimonials.html">Testimonials</a>
-            <a href="projects.html">Projects</a>
-            <a href="call.html">Book a call</a>
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
         </div>
-        <img id='menu' src="./resources/menu.png" />
+        <img id='menu' src="../resources/menu.png" />
         <div id="sidebar-menu">
-            <img id='close' src="./resources/close.png" />
+            <img id='close' src="../resources/close.png" />
             <a href="testimonials">Testimonials</a>
             <a href="projects">Projects</a>
             <a href="call">Book a call</a>
@@ -46,17 +46,17 @@
         <div class="projects">
             <a href="https://gopanoptic.com" target="_blank">
                 <div class="image white-background">
-                    <img src="./resources/gopanoptic.png" />
+                    <img src="../resources/gopanoptic.png" />
                 </div>
             </a>
             <a href="https://trupul.com" target="_blank">
                 <div class="image wood-background">
-                    <img src="./resources/trupul.png" />
+                    <img src="../resources/trupul.png" />
                 </div>
             </a>
             <a href="https://vujis.com" target="_blank">
                 <div class="image charcoal-background">
-                    <img src="./resources/vujis.png" />
+                    <img src="../resources/vujis.png" />
                 </div>
             </a>
             <a href="https://hamiltonreserve.netlify.app/" target="_blank">
@@ -64,21 +64,46 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/2830/2830289.png" />
                 </div>
             </a>
-            <a href="https://www.proshotai.com/en" target="_blank">
-                <div class="image cherry-blossom-pink-background">
-                    <img src="./resources/proshot.png" />
+
+            <div class="card-container cherry-blossom-pink-background" onmouseenter="flipCard(this)"
+                onmouseleave="unflipCard(this)">
+                <div class="card">
+                    <div class="front" id="front">
+                        <div class="image">
+                            <img src="../resources/proshot.png" />
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-options">
+                            <a href="https://www.proshotai.com/en" target="_blank">Visit Site</a>
+                            <!-- Replace '#' with the link to your 'Read More' page -->
+                            <a href="/projects/proshots" target="_blank">Read More</a>
+                        </div>
+                    </div>
                 </div>
-            </a>
+            </div>
+
         </div>
     </main>
 
     <footer>
         <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span
                 id="year"></span></div>
-        <a href="terms.html">Terms of service</a>
-        <a href="privacy.html">Privacy policy</a>
+        <a href="terms">Terms of service</a>
+        <a href="privacy">Privacy policy</a>
         <script>
             document.getElementById('year').innerHTML = new Date().getFullYear()
+        </script>
+        <script>
+            function flipCard(element) {
+                element.querySelector('.card').classList.add('flip');
+                document.getElementById("front").style.display = "none";
+            }
+
+            function unflipCard(element) {
+                element.querySelector('.card').classList.remove('flip');
+                document.getElementById("front").style.display = "block";
+            }
         </script>
     </footer>
 

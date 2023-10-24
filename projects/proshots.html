@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects | Kyroc</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="We're a British engineering team that develops software & implements artificial intelligence for a wide variety of companies.">
+    <meta name="keywords" content="software development, ai development">
+    <meta name="author" content="Vishal Bolarum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="icon" href="../favicon.png">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href='/' class="logo">Kyroc</a>
+        <div class="nav-links">
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
+        </div>
+        <img id='menu' src="../resources/menu.png" />
+        <div id="sidebar-menu">
+            <img id='close' src="../resources/close.png" />
+            <a href="testimonials">Testimonials</a>
+            <a href="projects">Projects</a>
+            <a href="call">Book a call</a>
+        </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "block";
+            })
+            document.getElementById('close').addEventListener('click', () => {
+                document.getElementById('sidebar-menu').style.display = "none";
+            })
+        </script>
+    </nav>
+
+    <main>
+        <h2>ProShots</h2>
+        <div class="project-section">
+            <h3>Project Overview</h3>
+            <p class="project-description">
+                Our journey embarked with a vision - to make professional photoshoots accessible to everyone, regardless
+                of
+                their location or budget. ProShots is an online platform where users can obtain studio-quality portraits
+                without
+                stepping foot in a studio. The AI technology embedded within ProShots analyses user-uploaded images,
+                enhancing
+                and transforming them into professional photoshoot quality images.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Technical Profundity</h3>
+            <p class="project-description">
+                The backbone of ProShots is a sophisticated AI algorithm that meticulously processes images, augmenting
+                lighting, background, and overall composition to achieve a polished look. Our team delved into deep
+                learning and
+                computer vision techniques, developing an algorithm capable of understanding nuanced human features and
+                the
+                aesthetics of professional photography.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>User Interface</h3>
+            <p class="project-description">
+                A sleek, intuitive user interface ensures a seamless user experience. Users can effortlessly upload
+                their
+                images, choose their desired photoshoot theme, and let ProShots work its magic. The process is
+                streamlined, with
+                a focus on user-centric design, making professional photography a click away for anyone with a
+                smartphone or
+                computer.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Outcome and Impact</h3>
+            <p class="project-description">
+                ProShots has remarkably democratized professional photography. The response has been overwhelmingly
+                positive,
+                with users astonished by the quality of images ProShots delivers. It stands as a testament to the
+                boundless
+                potential of AI in fostering creativity and making specialized services more inclusive.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Kyroc's Commitment</h3>
+            <p class="project-description">
+                As a part of our expansive portfolio, ProShots epitomizes Kyroc's commitment to driving innovation and
+                delivering value to our clients. Through collaborative effort and a shared vision, we could transform an
+                ambitious idea into a reality, opening new horizons in the digital photography landscape. This project
+                not only
+                bolstered our expertise in AI and machine learning but also underscored the transformative impact of
+                technology
+                when melded with creativity and user-centric design.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Conclusion</h3>
+            <p class="project-description">
+                The journey with ProShots has enriched our narrative as a forward-thinking digital agency, and we are
+                thrilled
+                to showcase the strides we have made through this venture. In the digital era, the power of artificial
+                intelligence (AI) extends across a myriad of domains. At Kyroc, we had the privilege to venture into the
+                realm
+                of digital photography, working hand-in-hand with our client to bring this innovative project to life,
+                blending
+                technological innovation with creative expression.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div><a href="https://find-and-update.company-information.service.gov.uk/company/12110300">Kyroc Ltd</a> © <span
+                id="year"></span></div>
+        <a href="terms">Terms of service</a>
+        <a href="privacy">Privacy policy</a>
+        <script>
+            document.getElementById('year').innerHTML = new Date().getFullYear()
+        </script>
+    </footer>
+
+</body>
+
+</html>
