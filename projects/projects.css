@@ -38,6 +38,7 @@
 .projects div.cherry-blossom-pink-background {
     background-color: #e37283;
     transition-duration: 0.5s;
+    border-radius: 10px;
 }
 
 .projects div:hover {
@@ -60,11 +61,6 @@
     margin-bottom: 30px;
 }
 
-.project-image {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
  .card-container {
      perspective: 1000px;
      width: 300px;
@@ -112,4 +108,58 @@
      color: white;
      padding: 10px 20px;
      border-radius: 5px;
+ }
+ 
+
+ .project-logo {
+     display: block;
+     margin: 0 auto 20px 0;
+     width: 150px;
+     text-align: start;
+     /* Adjust width as needed */
+ }
+ .flex-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 60px;
+     margin-bottom: 50px;
+     margin-top: 50px;
+     flex-wrap: wrap;
+ }
+
+ .text-container {
+     flex: 1;
+ }
+
+ .project-image {
+     width: 35%;
+     /* or whatever width you prefer */
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin-top: auto;
+     margin-bottom: auto;
+ }
+
+ @media (max-width: 768px) {
+     .flex-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        gap: 10px;
+     }
+
+     .text-container,
+     .project-image {
+         width: 100%;
+         max-width: none;
+         text-align: left;
+     }
+
+     .project-image {
+         width: 100%;
+         margin-bottom: 20px;
+         /* Optional: adds some spacing between the image and text when stacked */
+     }
  }
